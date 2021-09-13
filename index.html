@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru">
+<head>
+	<title>Тестовое задание</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+	<link rel="stylesheet" href="css/template.css" type="text/css" />
+	<link rel="stylesheet" href="css/respond.css" type="text/css" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+	<div class="button-wrapp">
+		<button class="modal-button">Кликни</button>
+	</div>
+	
+	<div class="modal">
+		<button class="modal-close">
+			Закрыть
+		</button>
+		<div class="modal-form__inner">
+			<div class="modal-title">Получите набор файлов для руководителя:</div>
+			<form action = "./send.php" class="modal-form" method="post">
+				<div class="form-label">
+					<label for="input-email">Введите Email для получения файлов:</label>
+					<input type="text" id="input-email" class="form-input" name="user_email" placeholder="E-mail" />
+				</div>
+				<div class="form-label">
+					<label for="input-phone">Введите телефон для подтверждения доступа:</label>
+					<input type="tel" id="input-phone" class="form-input" name="user_phone" placeholder="+7 (000) 000-00-00" required />
+				</div>
+				<button class="modal-form__submit" name="form-submit" type="submit" formmethod="post">
+					<span>Скачать файлы</span>
+				</button>
+				<div class="form-desc">
+					<span>PDF 4,7 MB</span>
+					<span>DOC 0,8 MB</span>
+					<span>XLS 1,2 MB</span>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="modal-overlay"></div>
+	
+	</body>
+</html>

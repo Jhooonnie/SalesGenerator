@@ -1,0 +1,48 @@
+@media screen and (max-width: 1200px) {}
+
+
+@media screen and (max-width: 960px) {
+	html {font-size: 90%;}
+}
+
+
+@media screen and (max-width: 768px) {
+	html {font-size: 85%;}
+	.modal-close {
+		width: 1.4rem;
+		height: 1.4rem;
+	}
+	.modal-form__inner {
+		background: url('../images/modal-mobile_bg.png') no-repeat top 1rem center;
+		background-size: auto 11rem;
+		padding: 13.25rem 1.3rem 2.3rem 1.3rem;
+	}
+	.modal-form {
+		width: 100%;
+		margin: 0;
+	}
+	.modal-title {
+		max-width: 100%;
+		text-align: center;
+	}
+	.form-desc {
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.form-desc span {
+		display: block;
+		margin: 0 5%;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+	html {font-size: 80%;}
+}
+
+
+@media screen and (max-width: 480px) {}
+
+
+@media screen and (max-width: 320px) {}

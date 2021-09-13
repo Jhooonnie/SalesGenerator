@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+    /* ie 6/7 */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {height:100%;}
+
+body {
+margin:0;
+padding:0;
+height:100%;
+font-family: 'Open Sans', sans-serif;
+font-weight: 400; /* 600 semibold 700 bold */
+font-size: 100%;
+color: #000;
+min-width: 320px;
+background: #fff;
+}
+/* #######################  END GENERAL SETTINGS ############################ */
+.button-wrapp {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 235px; /* 14.7rem */
+	height: 70px; /* 4.375rem */
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	background: #ff0000;
+	border-radius: 4px;
+	border: 0 none;
+	border-right: 2px #bf0000 solid;
+	border-bottom: 2px #bf0000 solid;
+}
+.modal {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(-45%, -50%);
+	background: #fff;
+	z-index: 2;
+	border-radius: 1.4rem;
+	width: 90%;
+	max-width: 909px;
+}
+.modal-overlay {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0;
+	z-index: 1;
+}
+.modal.toggled {display: block;}
+.modal-overlay.toggled {display: block; opacity: 1;}
+.modal-close {
+	width: 1rem;
+	height: 1rem;
+	border: 0 none;
+	cursor: pointer;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	text-indent: -9999px;
+	background: url('../images/modal-close__bg.png') center no-repeat;
+	background-size: 100%;
+}
+
+
+/* form group */
+.modal-form__inner {
+	background: url('../images/modal_bg.png') no-repeat left 5% bottom;
+	background-size: 45% auto;
+	padding: 3.152rem;
+}
+.modal-title {
+	font-size: 2.25rem;
+	font-weight: 700;
+	max-width: 70%;
+}
+.modal-form {
+	width: 50%;
+	margin: 1rem 0 0 50%;
+}
+.form-label {
+	margin-top: 1.5rem;
+}
+.form-label label {
+	display: block;
+	margin: 0 0 .6rem 0;
+}
+.form-input {
+	display: block;
+	width: 100%;
+	height: 3.25rem;
+	background: #fff;
+	border: 1px #ababab solid;
+	border-radius: 6px;
+	padding: 0 1rem;
+}
+.form-input:focus {
+	/*outline: 0 none; ???*/
+}
+.form-input::-webkit-input-placeholder {color: #a0a0a0;}
+.form-input::-moz-placeholder {color: #a0a0a0;}
+.form-input:-ms-input-placeholder {color: #a0a0a0;}
+.form-input:-moz-placeholder {color: #a0a0a0;}
+
+.modal-form__submit {
+	width: 100%;
+	height: 4.75rem;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	text-align: center;
+	margin: 1rem 0 0 0;
+	border: 0 none;
+	border-bottom: 6px #36aa60 solid;
+	border-radius: 6px;
+	cursor: pointer;
+	background: rgb(83,221,133);
+	background: -moz-linear-gradient(180deg, rgba(83,221,133,1) 0%, rgba(59,198,110,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(83,221,133,1) 0%, rgba(59,198,110,1) 100%);
+	background: linear-gradient(180deg, rgba(83,221,133,1) 0%, rgba(59,198,110,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#53dd85",endColorstr="#3bc66e",GradientType=1);
+}
+.modal-form__submit span {
+	display: flex;
+	align-items: center;
+	padding: 0 3.375rem 0 0;
+	min-height: 2.5rem;
+	margin: 0 auto;
+	background: url('../images/modal-form__submit.png') no-repeat right center;
+	background-size: auto 100%;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.form-desc {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: .75rem 0 0 0;
+	color: #808080;
+	font-size: .75rem;
+}
+/* form group */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
